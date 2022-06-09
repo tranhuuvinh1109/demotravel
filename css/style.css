@@ -1,0 +1,2245 @@
+@import url(materialize.min.css);
+@import url(http://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(font-awesome.min.css);
+@import url(fontic-hotels.css);
+@import url(owl.carousel.css);
+@import url(fotorama.css);
+@import url(nouislider.css);
+@import url(uber-google-maps.min.css);
+
+/*------------------------------------------------------------------
+
+[Master Stylesheet]
+
+Project:                Holiday Homes - Short Term Rent and Travel HTML Template
+Version:                1.0
+Last change:            17/07/2015
+Author:                 Coffeecream Themes
+Assigned to:            Marcin Banaszek
+
+------------------------------------------------------------------
+
+[Color codes]
+
+Body background:        #fff (white)
+Brand color:            #03a9f4 (light-blue)
+Text:                   #929292 (gray)
+Header h1-h6:           #212121 (dark gray)
+Main nav background:    #fff (white)
+Footer background:      #212121 (dark gray)
+
+a (standard):           #03a9f4 (light-blue)
+a (visited):            #03a9f4 (light-blue)
+a (active):             #03a9f4 (light-blue)
+a (hover):              #4fc3f7 (light-blue)
+
+------------------------------------------------------------------
+
+[Table of contents]
+
+1. Global styles
+2. Navbar
+	2.1. Navbar dropdown
+	2.2. Sidebar nav
+	2.3. Tools bar
+3. Searchbox
+4. Slider
+	4.1. Image slider
+	4.2. Full screen video
+	4.3. Arrow
+5. Content
+	5.1. Headings
+	5.2. Tables
+	5.3. Cards and offers
+	5.4. Carousels
+	5.5. Newsletter
+	5.6. Reviews
+	5.7. Loader
+	5.8. Latest posts
+	5.9. Blog
+		5.9.1. Sharing
+		5.9.2. Related posts
+		5.9.3. Comments
+		5.9.4. Pagination
+		5.9.5. Flickr
+	5.10. Sidebar
+		5.10.1. Checkbox icons
+	5.11. Forms
+		5.11.1. Common styles
+		5.11.2. Checkboxes
+		5.11.3. Multiple file upload
+		5.11.4. Radio buttons
+		5.11.5. Range inputs
+		5.11.6. Rating form
+	5.12. Acordion
+	5.13. Location
+	5.14. Properties
+		5.14.1. Contact agent
+		5.14.2. Calendar
+		5.14.3. Map
+		5.14.4. Owners
+	5.15. Agencies
+	5.16. Price tables
+	5.17. Content nav
+	5.18. Pagination
+	5.19. Pattern background
+	5.20. How does it work
+6. Footer
+	6.1. Headings
+	6.2. Quick links
+	6.3. Social icons
+
+-------------------------------------------------------------------*/
+
+/* 1. GLOBAL STYLES
+-------------------------------------------------------------------*/
+
+body {
+	color: #929292;
+	font-family: 'Abel', sans-serif;
+}
+
+a {
+	color: #03a9f4;
+	transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+}
+
+a:hover {
+	color: #4fc3f7;
+}
+
+.btn,
+.btn:hover {
+	color: #fff;
+	padding: 0 2rem;
+	font-size: 15px;
+}
+
+button {
+	font-family: 'Abel', sans-serif;
+}
+
+button:focus {
+	background: #03a9f4;
+}
+
+.z-depth-1,
+nav,
+.card-panel,
+.card, .toast,
+.btn,
+.btn-large,
+.btn-floating,
+.collapsible,
+.sidenav {
+	box-shadow: none;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+	color: #222;
+}
+
+.container {
+	width: 940px;
+}
+
+.divider {
+	margin: 30px 0;
+}
+
+p {
+	margin: 0 0 2rem 0;
+}
+
+ol {
+	margin-bottom: 2rem;
+}
+
+ol li {
+	margin: 1rem 0;
+}
+
+blockquote {
+	border-color: #03a9f4;
+	font-style: italic;
+}
+
+blockquote cite {
+	display: block;
+	font-style: normal;
+}
+
+.btn.square {
+	margin-bottom: 3px;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+}
+
+.container .row {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+.row .col {
+	padding: 0 1rem;
+}
+
+::-webkit-input-placeholder{color:#888}
+:-moz-placeholder{color:#888}
+::-moz-placeholder{color:#888}
+:-ms-input-placeholder{color:#888}
+
+/* 2. NAVBAR
+-------------------------------------------------------------------*/
+
+.navbar-fixed {
+	margin-top: 35px;
+}
+
+nav {
+	box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+}
+
+	nav ul li {
+		position: relative;
+	}
+
+		nav ul li a,
+		nav ul li a:hover {
+			color: #222;
+			font-weight: bold;
+			padding: 0 12px;
+			text-transform: uppercase;
+		}
+		nav ul li a:focus {
+			outline: none;
+		}
+		nav .brand-logo {
+			height: 100%;
+			line-height: 1rem;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		nav .divider {
+			margin: 0;
+		}
+
+#mobile-nav i {
+	line-height: 62px;
+}
+
+	/* 2.1. NAVBAR DROPDOWN
+	---------------------------------------------------------------*/
+
+	nav .right .dropdown-content {
+		box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+		left: 0 !important;
+		top: 100% !important;
+		width: 180px !important;
+	}
+
+		nav .right .dropdown-content li > a {
+			font-size: 1rem;
+			font-weight: normal;
+			padding: 0.7rem 1rem;
+			text-transform: none;
+		}
+
+			nav .right .dropdown-content li > a:before {
+				color: #039be5;
+				content: "\f105";
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				margin-right: 10px;
+			}
+
+	.dropdown-content li > a,
+	.dropdown-content li > span {
+		font-size: 1rem;
+	}
+
+	/* 2.2. SIDEBAR NAV
+	---------------------------------------------------------------*/
+
+	.sidenav li {
+		padding: 0;
+	}
+
+	.sidenav .collapsible-header {
+		margin: 0;
+		padding: 0 2rem;
+	}
+
+	.sidenav .collapsible-body {
+		background: #fff;
+		padding: 0;
+	}
+
+	.sidenav .collapsible-body li a {
+		font-weight: normal;
+		text-transform: none;
+	}
+
+	.sidenav .collapsible-body li a {
+		padding-right: 0;
+	}
+
+	.sidenav-overlay {
+		/*z-index: 996;*/
+	}
+
+	/* 2.3. TOOLS BAR
+	---------------------------------------------------------------*/
+
+	#tools {
+		border-bottom: 1px solid #f0f0f0;
+		font-size: 0.9rem;
+		height: 35px;
+		left: 0;
+		line-height: 35px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+		#tools ul {
+			margin: 0;
+			opacity: 0.5;
+			padding: 0;
+			transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-webkit-transition: all .5s ease;
+			-o-transition: all .5s ease;
+		}
+
+			#tools:hover ul {
+				opacity: 1;
+			}
+
+			#tools ul li {
+				float: left;
+				padding: 0 20px 0 0;
+			}
+
+			#tools .right li {
+				padding: 0 0 0 20px;
+			}
+
+				#tools ul li a {
+					color: #888;
+				}
+
+					#tools ul li a:hover,
+					#tools ul li .active {
+						color: #222;
+					}
+
+			#tools .right li {
+				padding: 0;
+			}
+
+				#tools .right li a {
+					display: block;
+					padding: 0 10px;
+				}
+
+					#tools .right li a:hover,
+					#tools .right li .active {
+						background: #f4f4f4;
+					}
+
+					#tools .right li a img {
+						opacity: 0.5;
+						transition: all .5s ease;
+						-moz-transition: all .5s ease;
+						-webkit-transition: all .5s ease;
+						-o-transition: all .5s ease;
+					}
+
+						#tools .right li a:hover img,
+						#tools .right li .active img {
+							opacity: 1;
+						}
+
+/* 3. SEARCHBOX
+-------------------------------------------------------------------*/
+
+#searchbox {
+	padding-bottom: 30px;
+}
+
+	#searchbox .row {
+		margin: 0;
+	}
+
+	#show-advanced {
+		cursor: pointer;
+		left: 50%;
+		margin-left: -27.75px;
+		position: absolute;
+	}
+
+	#searchbox .divider {
+		background: none;
+		border-top: 1px solid rgba(0,0,0,0.1);
+		margin: 30px 0;
+	}
+
+	#searchbox p {
+		margin-top: 0;
+	}
+
+	#searchbox label {
+		color: #fff;
+	}
+
+	#advanced {
+		padding-bottom: 2rem;
+	}
+
+	/* 3.1. INPUTS
+	---------------------------------------------------------------*/
+
+	#searchbox .select-wrapper input.select-dropdown,
+	#searchbox input[type=text],
+	#searchbox input[type=date] {
+		background: #fff;
+		border: 0;
+		border-radius: 2px;
+		color: #222;
+	}
+
+	#searchbox .btn {
+		display: block;
+		height: 49px;
+		line-height: 49px;
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	#searchbox ::-webkit-input-placeholder {
+		color: #222;
+	}
+
+	#searchbox :-moz-placeholder {
+		color: #222;
+	}
+
+	#searchbox ::-moz-placeholder {
+		color: #222;
+	}
+
+	#searchbox :-ms-input-placeholder {
+		color: #222;
+	}
+
+	#searchbox [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+		background: #fff;
+		border: 0;
+		border-radius: 2px;
+	}
+
+	#searchbox [type="checkbox"].filled-in:checked+span:not(.lever):after {
+		background: #222;
+		border: 0;
+		border-radius: 2px;
+	}
+
+	#searchbox [type="checkbox"]+span:not(.lever) {
+		height: 2.5rem;
+		line-height: 1.5rem;
+		padding-left: 2rem;
+	}
+
+		/* 3.2. DATE PICKER
+        ---------------------------------------------------------------*/
+
+	.picker__box {
+		border: 0;
+	}
+
+	.datepicker-date-display,
+	.datepicker-table td.is-selected {
+		background: #03a9f4;
+	}
+
+	.datepicker-table td.is-today,
+	.datepicker-cancel, .datepicker-clear,
+	.datepicker-today, .datepicker-done {
+		color: #03a9f4;
+	}
+
+	.datepicker-day-button:focus {
+		background-color: #f4f4f4;
+	}
+
+	.datepicker-controls .select-wrapper input.select-dropdown {
+		border-bottom: none;
+		text-align: center;
+		margin: 0;
+	}
+
+	.datepicker-controls .select-year input {
+		width: 70px;
+	}
+
+/* 4. SLIDER
+-------------------------------------------------------------------*/
+
+	/* 4.1. IMAGE SLIDER
+	---------------------------------------------------------------*/
+
+	.slider.fullscreen {
+		position: relative;
+	}
+
+		.caption {
+			left: auto;
+			overflow: hidden;
+			padding: 30px;
+			right: 15%;
+			text-transform: uppercase;
+			top: 65px;
+			width: 35%;
+		}
+
+			.caption .title,
+			.caption .price {
+				clear: both;
+				float: right;
+				padding: 1rem 2rem;
+			}
+
+			.caption .btn {
+				border-radius: 0;
+				clear: both;
+				float: right;
+			}
+
+			.caption h5,
+			.caption p {
+				margin: 0;
+				padding: 0;
+			}
+
+			.caption h2 {
+				font-weight: 200;
+				margin: 1rem 0 0;
+			}
+
+				.caption h3::after {
+					display: none;
+				}
+
+		.slider .indicators .indicator-item {
+			background-color: #fff;
+		}
+
+			.slider .indicators .indicator-item.active {
+				background-color: #03a9f4;
+			}
+
+		#fixed-height-slider {
+			height: 400px;
+		}
+
+	/* 4.2. FULL SCREEN VIDEO
+	---------------------------------------------------------------*/
+
+	#video {
+		position: relative;
+		width: 100%;
+	}
+
+		#video video {
+			background: url(../images/family-beach.jpg) no-repeat;
+			background-size: cover;
+			bottom: 0;
+			height: auto;
+			min-height: 100%;
+			min-width: 100%;
+			pointer-events: none;
+			position: absolute;
+			right: 0;
+			width: auto;
+		}
+
+	/* 4.3. ARROW
+	---------------------------------------------------------------*/
+
+	#arrow {
+		border-radius: 30px;
+		bottom: 30px;
+		cursor: pointer;
+		display: block;
+		font-size: 24px;
+		height: 60px;
+		left: 50%;
+		line-height: 60px;
+		margin-left: -30px;
+		position: absolute;
+		text-align: center;
+		width: 60px;
+		z-index: 100;
+	}
+
+	/* 4.4. PROMOS
+	---------------------------------------------------------------*/
+
+	#promos {
+		position: absolute;
+		right: 15%;
+		text-transform: uppercase;
+		top: 129px;
+	}
+
+		#promos li {
+			display: none;
+			right: 0;
+			width: 100%;
+		}
+
+/* 5. CONTENT
+-------------------------------------------------------------------*/
+
+section {
+	overflow: hidden;
+	padding: 100px 0;
+	position: relative;
+}
+
+	.arrow {
+		display: block;
+		height: 60px;
+		left: 50%;
+		margin-left: -30px;
+		position: absolute;
+		top: -30px;
+		width: 60px;
+		-ms-transform: rotate(45deg); /* IE 9 */
+		-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+		transform: rotate(45deg);
+	}
+
+	address {
+		font-style: normal;
+	}
+
+	/* 5.1. HEADINGS
+	---------------------------------------------------------------*/
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #212121;
+		font-family: 'Abel', sans-serif;
+		font-weight: normal;
+		margin: 0 0 2rem 0;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		font-size: 1.6rem;
+	}
+
+	h3::after {
+		background: #03a9f4;
+		content: "";
+		display: block;
+		height: 1px;
+		margin-top: 0.5em;
+		position: relative;
+		top: 1px;
+		width: 100px;
+	}
+
+		.center-align h3::after,
+		h3.center-align::after {
+			left: 50%;
+			margin-left: -50px;
+		}
+
+		.light-blue h3,
+		.darken-1 h3,
+		.darken-2 h3,
+		.darken-3 h3,
+		.darken-4 h3 {
+			border-bottom: 1px solid rgba(255,255,255,0.3);
+		}
+
+		.light-blue h3::after {
+			background: #fff;
+		}
+
+	h4 {
+		font-size: 1.4rem;
+	}
+
+	h5 {
+		font-size: 1.2rem;
+	}
+
+	h6 {
+		font-size: 1rem;
+	}
+
+	#title {
+		padding: 60px 0 40px;
+	}
+
+		#title h3 {
+			border: 0;
+			margin: 0;
+			padding: 0;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+		}
+
+			#title h3:after {
+				display: none;
+			}
+
+	/* 5.2. TABLES
+	---------------------------------------------------------------*/
+
+	table {
+		margin-bottom: 1em;
+	}
+
+	th, td {
+		padding: 15px;
+	}
+
+	th {
+		color: #222;
+		font-weight: normal;
+	}
+
+	td {
+		color: #888;
+	}
+
+	/* 5.3. CARDS
+	---------------------------------------------------------------*/
+
+	.card {
+		margin-top: 1rem;
+		position: relative;
+		top: 0;
+		transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
+	}
+
+	.card:hover {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+		top: -10px;
+	}
+
+		.card .card-title,
+		.card .card-content .card-title {
+			font-size: 21px;
+			line-height: 30px;
+		}
+
+		.card .card-image .card-title {
+			bottom: 20px;
+			background: rgba(0,0,0,0.7);
+			padding: 7px 20px;
+		}
+
+			.card-reveal .card-title {
+				margin-bottom: 1rem;
+			}
+
+		.card ul {
+			border-top: 1px solid #e7e7e7;
+			padding-top: 1rem;
+		}
+
+			.card ul li,
+			.offer ul li {
+				display: inline-block;
+				margin: 0 10px 5px 0;
+			}
+
+		.card .icons {
+			border: 0;
+			padding: 0;
+			font-size: 2rem;
+		}
+
+	.offer {
+		border-bottom: 1px dashed #ddd;
+		margin-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+		.offer-row:last-child .offer {
+			border: 0;
+			padding-bottom: 0;
+		}
+
+		.offer .offer-image {
+			padding-bottom: 1rem;
+		}
+
+		.offer .offer-content h5 {
+			margin-bottom: 0.2rem;
+		}
+
+	#sidebar .offer .row {
+		margin-bottom: 0;
+	}
+
+		#sidebar .offer .row .l7 {
+			padding-left: 0;
+		}
+
+	.offer-badge {
+		border-radius: 2px;
+		border-right: 1px solid #ddd;
+		display: inline-block;
+		margin: .2rem .4rem 1rem 0;
+		padding-right: .7rem;
+	}
+
+		.offer-badge:last-child {
+			border: 0;
+		}
+
+	/* 5.4. CAROUSELS
+	---------------------------------------------------------------*/
+
+	.owl-carousel {
+		position: relative;
+	}
+
+	.owl-nav {
+		position: absolute;
+		right: 0;
+		top: -90px;
+	}
+
+	.owl-prev,
+	.owl-next {
+		display: inline-block;
+		font-size: 1.25rem;
+		padding: 5px;
+	}
+
+	/* 5.5. NEWSLETTER
+	---------------------------------------------------------------*/
+
+	#newsletter h3 {
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+		position: relative;
+	}
+
+		#newsletter h3::after {
+			background-color: #fff;
+		}
+
+	#newsletter input {
+		border: 0;
+		border-radius: 2px;
+		box-sizing: border-box;
+		color: #222;
+	}
+
+	#newsletter .btn {
+		height: 49px;
+		line-height: 3rem;
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	/* 5.6. REVIEWS
+	---------------------------------------------------------------*/
+
+	.parallax-container {
+		height: auto;
+	}
+
+		.parallax-container h3 {
+			border-bottom: 1px solid rgba(255,255,255,0.3);
+			position: relative;
+		}
+
+	.tint {
+		height: 100%;
+		left: 0;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.review blockquote {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.review img {
+		margin-bottom: 20px;
+	}
+
+	.review h5 {
+		margin-bottom: 0.25rem;
+	}
+
+	#reviews-page .review {
+		border-bottom: 1px dashed #e7e7e7;
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.property-review {
+		margin-bottom: 1rem;
+		padding-left: 40px;
+		position: relative;
+	}
+
+		.property-review img {
+			height: 80px;
+			left: 0;
+			position: absolute;
+			top: 20px;
+			width: 80px;
+		}
+
+		.property-review blockquote {
+			background: #f4f4f4;
+			border: none;
+			padding: 20px 20px 20px 60px;
+		}
+
+			.property-review blockquote header {
+				color: #222;
+				font-style: normal;
+			}
+
+				.property-review blockquote header i {
+					margin-left: 0;
+				}
+
+	/* 5.7. LOADER
+	---------------------------------------------------------------*/
+
+	#loader {
+		background: #fff;
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 50000;
+	}
+
+		#loader .preloader-wrapper {
+			color: #ddd;
+			left: 50%;
+			margin: -32px 0 0 -32px;
+			position: absolute;
+			top: 50%;
+		}
+
+		.spinner-blue, .spinner-blue-only {
+			border-color: #03a9f4;
+		}
+
+	/* 5.8. LATEST POSTS
+	---------------------------------------------------------------*/
+
+	#latest-posts .meta {
+		font-weight: bold;
+		margin-top: 1em;
+		text-transform: uppercase;
+	}
+
+	#latest-posts h6 {
+		font-weight: bold;
+		margin-top: 0;
+		text-transform: uppercase;
+	}
+
+	/* 5.9. BLOG
+	---------------------------------------------------------------*/
+
+	.owl-item .post {
+		margin-top: 10px;
+		position: relative;
+		top: 0;
+		transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
+	}
+
+		.owl-item .post:hover {
+			top: -10px;
+		}
+
+	#blog .post-cover {
+		max-height: 400px;
+		overflow: hidden;
+		margin-bottom: 1rem;
+	}
+
+	#blog .post {
+		margin-bottom: 60px;
+	}
+
+		#blog .post img {
+			width: 100%;
+		}
+
+		#blog .post h4 {
+			margin-bottom: 0;
+		}
+
+		#blog .post .author {
+			display: block;
+			font-size: 1rem;
+			font-weight: normal;
+			letter-spacing: normal;
+		}
+
+			#blog .post .author span {
+				margin-right: 15px;
+			}
+
+		#blog .post .meta {
+			margin-bottom: 20px;
+			padding: 10px 0;
+		}
+
+			#blog .post .meta .day {
+				font-size: 2em;
+				font-weight: 900;
+				line-height: 1.2em;
+			}
+
+			#blog .post .meta i {
+				display: block;
+			}
+
+		#blog .post ul li img {
+			margin-bottom: 15px;
+		}
+
+		/* 5.9.1. SHARING
+		-----------------------------------------------------------*/
+
+		#share::after {
+			clear: both;
+			content: "";
+			display: table;
+			width: 100%;
+		}
+
+		#share .btn {
+			padding: 0;
+			width: 43px;
+		}
+
+		/* 5.9.2. RELATED POSTS
+		-----------------------------------------------------------*/
+
+		#blog #related-posts .owl-nav {
+			top: -45px;
+		}
+
+		#blog #related-posts .post {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+
+		#blog #related-posts .meta {
+			font-weight: bold;
+			margin: 1em 0 0;
+			padding: 0;
+			text-transform: uppercase;
+		}
+
+		#blog #related-posts h6 {
+			font-weight: bold;
+			margin-top: 0;
+			text-transform: uppercase;
+		}
+
+		/* 5.9.3. COMMENTS
+		-----------------------------------------------------------*/
+
+		#comments {
+		}
+
+		.comment {
+			margin-bottom: 1rem;
+			padding-left: 40px;
+			position: relative;
+		}
+
+			.comment img {
+				height: 80px;
+				left: 0;
+				position: absolute;
+				top: 20px;
+				width: 80px;
+			}
+
+			.comment blockquote {
+				background: #f4f4f4;
+				border: 0;
+				padding: 20px 20px 20px 60px;
+			}
+
+				.comment blockquote header {
+					color: #222;
+					font-style: normal;
+				}
+
+			.comment.reply {
+				margin-left: 40px;
+			}
+
+		/* 5.9.4. PAGINATION
+		-----------------------------------------------------------*/
+
+		.pagination:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* 5.9.5. FLICKR
+		-----------------------------------------------------------*/
+
+		#flickr_badge_wrapper a {
+			display: inline-block;
+			padding: 0 5px 0 0;
+			width: 25%;
+		}
+
+		#flickr_badge_wrapper img {
+			width: 100%;
+		}
+
+	/* 5.10. SIDEBAR
+	---------------------------------------------------------------*/
+
+	.sidebar-widget ul li {
+		display: block;
+	}
+
+		.sidebar-widget ul li a {
+			border-bottom: 1px solid #e0e0e0;
+			display: block;
+			padding: 15px 10px;
+			transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-webkit-transition: all .5s ease;
+			-o-transition: all .5s ease;
+		}
+
+			.sidebar-widget ul li a:hover {
+				background: #f8f8f8;
+			}
+
+			.sidebar-widget ul li a i {
+				margin-right: 10px;
+			}
+
+	.waves-effect.waves-blue .waves-ripple {
+		background-color: rgba(3, 169, 244, 0.5);
+	}
+
+		/* 5.10.1. ICONS CHECKBOXES
+		-----------------------------------------------------------*/
+
+		#features {
+			margin-bottom: 20px;
+		}
+
+		.icon-checkbox {
+			display: block;
+			float: left;
+			height: 41px;
+			margin: 2px;
+		}
+
+			.icon-checkbox input,
+			.icon-checkbox label span {
+				display: none;
+			}
+
+			.icon-checkbox input + label {
+				padding: 0;
+			}
+
+				.icon-checkbox input + label:before {
+					border: 1px solid #ddd;
+					border-radius: 2px;
+					cursor: pointer;
+					color: #aaa;
+					display: inline-block;
+					font-family: "fontic-hotel";
+					font-size: 24px;
+					height: 41px;
+					line-height: 41px;
+					margin: 0;
+					position: relative;
+					text-align: center;
+					width: 41px;
+				}
+
+					.icon-checkbox:hover input + label:before {
+						background: #fff;
+						border: 1px solid #bbb;
+					}
+
+					.icon-checkbox input:checked + label:before {
+						border: 1px solid #03a9f4;
+						background: #03a9f4;
+						color: #fff;
+						top: 0;
+						left: 0;
+						width: 40px;
+						height: 40px;
+						-webkit-transform: none;
+						-moz-transform: none;
+						-ms-transform: none;
+						-o-transform: none;
+						transform: none;
+						-webkit-backface-visibility: hidden;
+					}
+
+				.icon-checkbox #air-condition + label:before {
+					content: "\e05e";
+				}
+
+				.icon-checkbox #swimming-pool + label:before {
+					content: "\e00d";
+				}
+
+				.icon-checkbox #beach + label:before {
+					content: "\e05a";
+				}
+
+				.icon-checkbox #wifi + label:before {
+					content: "\e000";
+				}
+
+				.icon-checkbox #shopping + label:before {
+					content: "\e014";
+				}
+
+				.icon-checkbox #parking + label:before {
+					content: "\e023";
+				}
+
+				.icon-checkbox #nightclub + label:before {
+					content: "\e028";
+				}
+
+				.icon-checkbox #gym + label:before {
+					content: "\e037";
+				}
+
+				.icon-checkbox #bar + label:before {
+					content: "\e043";
+				}
+
+				.icon-checkbox #tennis + label:before {
+					content: "\e00b";
+				}
+
+				.icon-checkbox #golf + label:before {
+					content: "\e038";
+				}
+
+				.icon-checkbox #spa + label:before {
+					content: "\e02a";
+				}
+
+				.icon-checkbox #washing-machine + label:before {
+					content: "\e003";
+				}
+
+				.icon-checkbox #safe + label:before {
+					content: "\e017";
+				}
+
+				.icon-checkbox #pets + label:before {
+					content: "\e021";
+				}
+
+				.icon-checkbox #iron + label:before {
+					content: "\e030";
+				}
+
+				.icon-checkbox #restaurant + label:before {
+					content: "\e018";
+				}
+
+				.icon-checkbox #fishing + label:before {
+					content: "\e03b";
+				}
+
+				.icon-checkbox #port + label:before {
+					content: "\e045";
+				}
+
+				.icon-checkbox #car-rental + label:before {
+					content: "\e050";
+				}
+
+				.icon-checkbox #disabled + label:before {
+					content: "\e047";
+				}
+
+				.icon-checkbox #dryer + label:before {
+					content: "\e042";
+				}
+
+				.icon-checkbox #bathtub + label:before {
+					content: "\e05b";
+				}
+
+				.icon-checkbox #smoking + label:before {
+					content: "\e011";
+				}
+
+	/* 5.11. FORMS
+	---------------------------------------------------------------*/
+
+		/* 5.11.1. COMMON STYLES
+		-----------------------------------------------------------*/
+
+		form .row {
+			margin: 0;
+		}
+
+		form p {
+			margin-bottom: 10px;
+		}
+
+		.input-field {
+			margin-bottom: 0;
+		}
+
+		input[type=text]:not(.browser-default),
+		input[type=password]:not(.browser-default),
+		input[type=email]:not(.browser-default),
+		input[type=url]:not(.browser-default),
+		input[type=time]:not(.browser-default),
+		input[type=date]:not(.browser-default),
+		input[type=datetime-local]:not(.browser-default),
+		input[type=tel]:not(.browser-default),
+		input[type=number]:not(.browser-default),
+		input[type=search]:not(.browser-default),
+		textarea.materialize-textarea,
+		.select-wrapper input.select-dropdown {
+			font-family: 'Abel', sans-serif;
+			background: #f4f4f4;
+			border-bottom: 0;
+			border-top: 1px solid #ddd;
+			box-sizing: border-box;
+			height: auto;
+			padding: 15px;
+			font-size: 1rem;
+			margin: 0 0 20px 0;
+		}
+
+		input[type=date]::-webkit-inner-spin-button,
+		input[type=date]::-webkit-outer-spin-button,
+		input[type=date]::-webkit-calendar-picker-indicator,
+		input[type=date]::-webkit-clear-button {
+			display: none;
+			-webkit-appearance: none;
+		}
+
+		textarea.materialize-textarea {
+			height: 150px;
+		}
+
+		.select-wrapper input.select-dropdown {
+			height: 49px;
+		}
+
+		.select-wrapper .caret {
+			z-index: 1;
+			right: 10px;
+		}
+
+		input[type=text]:not(.browser-default):focus:not([readonly]),
+		input[type=password]:not(.browser-default):focus:not([readonly]),
+		input[type=email]:not(.browser-default):focus:not([readonly]),
+		input[type=url]:not(.browser-default):focus:not([readonly]),
+		input[type=time]:not(.browser-default):focus:not([readonly]),
+		input[type=date]:not(.browser-default):focus:not([readonly]),
+		input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+		input[type=tel]:not(.browser-default):focus:not([readonly]),
+		input[type=number]:not(.browser-default):focus:not([readonly]),
+		input[type=search]:not(.browser-default):focus:not([readonly]),
+		textarea.materialize-textarea:focus:not([readonly]),
+		.select-wrapper input.select-dropdown:focus {
+			border-bottom: 0;
+			border-top: 1px solid #03a9f4;
+			box-shadow: none;
+		}
+
+		input[type=text]:focus:not([readonly]) + label,
+		input[type=password]:focus:not([readonly]) + label,
+		input[type=email]:focus:not([readonly]) + label,
+		input[type=url]:focus:not([readonly]) + label,
+		input[type=time]:focus:not([readonly]) + label,
+		input[type=date]:focus:not([readonly]) + label,
+		input[type=datetime-local]:focus:not([readonly]) + label,
+		input[type=tel]:focus:not([readonly]) + label,
+		input[type=number]:focus:not([readonly]) + label,
+		input[type=search]:focus:not([readonly]) + label,
+		textarea.materialize-textarea:focus:not([readonly]) + label {
+			color: #03a9f4;
+		}
+
+		/* 5.11.2. CHECKBOXES
+		-----------------------------------------------------------*/
+
+		[type="checkbox"]+span:not(.lever) {
+			height: 2.5rem;
+			line-height: 2.5rem;
+			padding-left: 2rem;
+		}
+
+		[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+			background: #f4f4f4;
+			border: 0;
+			border-radius: 0;
+			border-top: 1px solid #ddd;
+			top: 0.5rem;
+		}
+
+		[type="checkbox"].filled-in:checked+span:not(.lever):after {
+			border: 0;
+			border-radius: 0;
+			background-color: #03a9f4;
+			top: 0.5rem;
+		}
+
+		[type="checkbox"].filled-in:checked+span:not(.lever):before {
+			border-right: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+			top: 0.5rem;
+		}
+
+		/* 5.11.3. MULTIPLE FILE UPLOAD
+		-----------------------------------------------------------*/
+
+		.MultiFile-wrap {
+			border: 5px solid #f4f4f4;
+			padding: 1rem;
+			position: relative;
+		}
+
+		.MultiFile-remove {
+			font-size: 1.5rem;
+			font-weight: 900;
+			position: absolute;
+			right: 1rem;
+			top: 0.25rem;
+		}
+
+		.MultiFile-preview {
+			margin: 1rem 1rem 0 0;
+		}
+
+		.MultiFile-title {
+			display: none;
+		}
+
+		/* 5.11.4. RADIO BUTTONS
+		-----------------------------------------------------------*/
+
+		[type="radio"]+span {
+			margin-bottom: 20px;
+		}
+
+		[type="radio"].with-gap:checked+span:before {
+			border: 2px solid #03a9f4;
+		}
+
+		[type="radio"].with-gap:checked+span:after {
+			border: 2px solid #03a9f4;
+			background-color: #03a9f4;
+		}
+
+		/* 5.11.5. RANGE INPUTS
+		-----------------------------------------------------------*/
+
+		.range {
+			background: #f4f4f4;
+			border-top: 1px solid #ddd;
+			display: table;
+			margin-bottom: 20px;
+			padding: 15px;
+			width: 100%;
+		}
+
+		#advanced .range {
+			background: 0;
+			border: 0;
+			margin: 0;
+		}
+
+		#advanced .noUi-background {
+			background: #0288d1;
+		}
+
+		#advanced .noUi-connect {
+			background: #fff;
+		}
+
+		#advanced .noUi-handle {
+			background: #03a9f4;
+			border: 2px solid #fff;
+		}
+
+		/* 5.11.6. RATING FORM
+		---------------------------------------------------------------*/
+
+		.rating-stars {
+			display: block;
+			height: 45px;
+			position: relative;
+			width: 139.297px;
+		}
+
+		.rating-stars [type="radio"]:not(:checked)+label,
+		.rating-stars [type="radio"]:checked+label {
+			display: block;
+			float: left;
+			height: 45px;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			text-indent: -999rem;
+			width: 20%;
+			z-index: 100;
+			cursor: pointer;
+		}
+
+			.rating-stars [type="radio"]:not(:checked)+label:before,
+			.rating-stars [type="radio"]:checked+label:before,
+			.rating-stars [type="radio"]:not(:checked)+label:after,
+			.rating-stars [type="radio"]:checked+label:after {
+				display: none;
+			}
+
+		.rating-stars:before,
+		.rating-stars label:hover ~ span:before,
+		.rating-stars input:checked ~ span:before {
+			border: 0;
+			border-radius: 0;
+			display: block;
+			font-family: "FontAwesome";
+			font-size: 2rem;
+			height: 45px;
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+
+		.rating-stars:before {
+			content: "\f006\f006\f006\f006\f006";
+		}
+
+		.rating-stars label:hover ~ span:before,
+		.rating-stars input:checked ~ span:before {
+			color: #ffc107;
+			content: "\f005\f005\f005\f005\f005";
+			overflow: hidden;
+			width: 0;
+			transition: width 0.3s;
+		}
+
+		.rating-stars .star1:checked ~ span:before {
+			width: 20%;
+		}
+
+		.rating-stars .star2:checked ~ span:before {
+			width: 40%;
+		}
+
+		.rating-stars .star3:checked ~ span:before {
+			width: 60%;
+		}
+
+		.rating-stars .star4:checked ~ span:before {
+			width: 80%;
+		}
+
+		.rating-stars .star5:checked ~ span:before {
+			width: 100%;
+		}
+
+		.rating-stars .star1:hover ~ span:before {
+			width: 20%;
+		}
+
+		.rating-stars .star2:hover ~ span:before {
+			width: 40%;
+		}
+
+		.rating-stars .star3:hover ~ span:before {
+			width: 60%;
+		}
+
+		.rating-stars .star4:hover ~ span:before {
+			width: 80%;
+		}
+
+		.rating-stars .star5:hover ~ span:before {
+			width: 100%;
+		}
+
+	/* 5.12. ACCORDION
+	---------------------------------------------------------------*/
+
+	.collapsible {
+		margin-bottom: 3rem;
+	}
+
+	.collapsible-body {
+		padding: 2rem;
+	}
+
+		.collapsible-body p {
+			margin-bottom: 1rem;
+			padding: 0;
+		}
+
+	/* 5.13. LOCATION
+	---------------------------------------------------------------*/
+
+	#map-container {
+		height: 500px !important;
+		width: 100%;
+	}
+
+	/* 5.14. PROPERTIES
+	---------------------------------------------------------------*/
+
+	.title {
+		position: relative;
+	}
+
+		.title .btn {
+			height: 45px;
+			margin-top: 10px;
+			padding: 0 15px;
+		}
+
+	#filters {
+		padding: 20px;
+	}
+
+	.estate {
+		margin-bottom: 60px;
+	}
+
+		.estate img {
+			margin-bottom: 10px;
+		}
+
+		.estate h5,
+		.estate h6,
+		.estate p {
+			margin: 7px 0;
+		}
+
+		.estate .btn {
+			margin-top: 10px;
+		}
+
+	.filter {
+		margin: 0 20px 20px 0;
+		padding: 20px;
+	}
+
+		.filter h6 {
+			font-weight: bold;
+			margin: 0 0 20px;
+			text-transform: uppercase;
+		}
+
+	.features li {
+		margin-bottom: 0.75rem;
+	}
+
+		.features li span {
+			margin-right: 0.75rem;
+		}
+
+		/* 5.14.1. CONTACT AGENT
+		-----------------------------------------------------------*/
+
+		#contact-agent h5 {
+			margin-top: 0;
+		}
+
+		#contact-agent li {
+			margin-bottom: 5px;
+		}
+
+			#contact-agent li i {
+				width: 20px;
+			}
+
+		#contact-agent .input-field {
+			margin: 0;
+		}
+
+		#contact-agent input,
+		#contact-agent textarea {
+			border: 0;
+			border-radius: 2px;
+			box-sizing: border-box;
+		}
+
+		#contact-agent textarea {
+			height: 120px;
+			padding: 10px;
+		}
+
+		/* 5.14.2. CALENDAR
+		-----------------------------------------------------------*/
+
+		.calendar {
+			text-align: center;
+		}
+
+			.calendar th,
+			.calendar td {
+				border: 1px solid #e0e0e0;
+				padding: 0;
+				text-align: center;
+			}
+
+			.calendar th {
+				padding: 1rem 0;
+			}
+
+				.calendar td a,
+				.calendar td span {
+					display: block;
+					padding: 1rem 0;
+				}
+
+		/* 5.14.3. MAP
+		-----------------------------------------------------------*/
+
+		#fullscreen-map #map-container {
+			height: 100% !important;
+		}
+
+		/* 5.14.4. OWNERS
+		-----------------------------------------------------------*/
+
+		.owner {
+			margin-bottom: 3rem;
+			position: relative;
+		}
+
+			.owner .badge {
+				background: #03a9f4;
+				border-radius: 1rem;
+				color: #fff;
+				left: 1rem;
+				padding: 0 0.5rem;
+				position: absolute;
+				top: 0;
+			}
+
+			.owner strong {
+				color: #222;
+				display: inline-block;
+				font-weight: normal;
+				width: 55px;
+			}
+
+	/* 5.15. AGENCIES
+	---------------------------------------------------------------*/
+
+	.agency h5 {
+		margin: 0;
+	}
+
+	.agency ul {
+		margin: 0 10px 20px 0;
+	}
+
+	.agency strong {
+		color: #222;
+	}
+
+	/* 5.16. PRICE TABLES
+	---------------------------------------------------------------*/
+
+	.price-table {
+		border: 5px solid #f4f4f4;
+		margin: 15px 0;
+		padding: 5px 5px 1rem;
+		position: relative;
+		text-align: center;
+		top: 0;
+		transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
+	}
+
+		.price-table:hover {
+			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+			position: relative;
+			top: -10px;
+		}
+
+	.price-table-title {
+		font-weight: 900;
+		padding: 20px 0 70px;
+		text-transform: uppercase;
+	}
+
+	.price-table-price {
+		border: 5px solid #fff;
+		display: inline-block;
+		font-size: 2rem;
+		font-weight: 200;
+		height: 120px;
+		line-height: 110px;
+		margin: -70px 0 10px;
+		width: 120px;
+	}
+
+		.price-table ul {
+			margin: 0 0 1rem;
+			padding: 0;
+		}
+
+			.price-table ul li {
+				border-bottom: 1px solid #e7e7e7;
+				padding: 0.5rem 1rem;
+			}
+
+				.price-table ul li:nth-child(even) {
+					background: #f8f8f8;
+				}
+
+				.price-table ul li span {
+					display: block;
+				}
+
+		.price-table [type="radio"]:not(:checked)+label,
+		.price-table [type="radio"]:checked+label {
+			height: 2rem;
+			line-height: 2rem;
+			padding: 0;
+			width: 100px;
+		}
+
+		.price-table [type="radio"]:not(:checked)+span:before {
+			background: #03a9f4;
+			border: 0;
+			border-radius: 2px;
+			color: #fff;
+			content: "Choose";
+			height: 2rem;
+			line-height: 2rem;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			width: 100px;
+		}
+
+		.price-table [type="radio"]:checked+span:before {
+			background: #fff;
+			border: 0;
+			border-radius: 0;
+			color: #03a9f4;
+			content: "\f046";
+			font-family: "FontAwesome";
+			font-size: 2rem;
+			height: 2rem;
+			line-height: 2rem;
+			margin: 0;
+			padding: 0;
+			width: 105px;
+		}
+
+		.price-table [type="radio"]:not(:checked)+span,
+		.price-table [type="radio"]:checked+span {
+			padding-left: 75px;
+			color: #fff;
+		}
+
+		.price-table [type="radio"]:checked+span:after {
+			display: none;
+		}
+
+	/* 5.17. CONTENT NAV
+	---------------------------------------------------------------*/
+
+	ul.nav li a {
+		border-bottom: 1px solid #e7e7e7;
+		display: block;
+		padding: 1rem;
+	}
+
+		ul.nav li a:hover {
+			background: #f8f8f8;
+		}
+
+			ul.nav li a::before {
+				color: #222;
+				content: "\f105";
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				margin-right: 10px;
+				text-decoration: inherit;
+			}
+
+	/* 5.18. PAGINATION
+	---------------------------------------------------------------*/
+
+	.pagination {
+		text-align: center;
+	}
+
+		.pagination li {
+			display: inline-block;
+			float: none;
+		}
+
+			.pagination li a {
+				display: block;
+				height: 2rem;
+				line-height: 2rem;
+			}
+
+	/* 5.19. PATTERN BACKGROUND
+	---------------------------------------------------------------*/
+
+	.pattern {
+		background-image: url(../images/pattern.png);
+	}
+
+	/* 5.20. HOW DOES IT WORK
+	---------------------------------------------------------------*/
+
+	#how .section .circle {
+		background: #222;
+		color: #fff;
+		display: inline-block;
+		font-size: 3rem;
+		height: 100px;
+		line-height: 105px;
+		margin-bottom: 2rem;
+		width: 100px;
+		text-align: center;
+		transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
+	}
+
+	#how .section:hover .circle {
+		background: #fff;
+		color: #222;
+		transform: rotateY(180deg);
+	}
+
+/* 6. FOOTER
+-------------------------------------------------------------------*/
+
+	footer .row {
+		margin: 0;
+	}
+
+	/* 6.1. HEADINGS
+	---------------------------------------------------------------*/
+
+	footer h5 {
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+		color: #fff;
+		font-weight: 200;
+		margin-bottom: 2em;
+	}
+
+	footer h5::after {
+		background: #fff;
+		content: "";
+		display: block;
+		height: 1px;
+		margin-top: 1em;
+		position: relative;
+		top: 1px;
+		width: 50px;
+	}
+
+	/* 6.2. QUICK LINKS
+	---------------------------------------------------------------*/
+
+	footer .waves-effect {
+		display: block;
+	}
+
+		footer li a {
+			border-bottom: 1px solid rgba(255,255,255,0.1);
+			display: block;
+			padding: 15px 10px;
+			transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-webkit-transition: all .5s ease;
+			-o-transition: all .5s ease;
+		}
+
+			footer li a:hover {
+				background: rgba(255,255,255,0.05);
+			}
+
+			footer li a::before {
+				color: #fff;
+				content: "\f105";
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				margin-right: 10px;
+				text-decoration: inherit;
+			}
+
+	/* 6.3. SOCIAL ICONS
+	---------------------------------------------------------------*/
+
+	footer .fa {
+		margin-left: 10px;
+	}
+
+	footer p {
+		margin: 0;
+	}
+
+/* 7. MOBILE SITES
+-------------------------------------------------------------------*/
+
+	/* 7.1. BIG SCREENS
+	---------------------------------------------------------------*/
+	@media (min-width: 1200px) {
+
+		.container {
+			width: 1140px;
+		}
+
+		#fixed-height-slider {
+			height: 500px;
+		}
+
+		.caption {
+			width: 30%;
+		}
+
+		#map-container {
+			height: 600px !important;
+		}
+
+		.icon-checkbox {
+			height: 42px;
+		}
+
+		.icon-checkbox input + label:before,
+		.icon-checkbox input:checked + label:before {
+			height: 42px;
+			line-height: 42px;
+			width: 42px;
+		}
+
+	}
+
+	/* 7.2. BIG TABLETS
+	---------------------------------------------------------------*/
+	@media (max-width: 992px) {
+
+		.container {
+			width: 720px;
+		}
+
+		section {
+			padding: 60px 0;
+		}
+
+		#fixed-height-slider {
+			height: 300px;
+		}
+
+		.caption {
+			right: 7.5%;
+			width: 50%;
+		}
+
+		#comments h6 span {
+			display: block;
+			margin-top: 5px;
+		}
+
+		#share .left,
+		#share .right {
+			float: none !important;
+			margin-bottom: 10px;
+		}
+
+		#map-container {
+			height: 400px !important;
+		}
+
+		.icon-checkbox {
+			height: 43px;
+		}
+
+		.icon-checkbox input + label:before,
+		.icon-checkbox input:checked + label:before {
+			height: 43px;
+			line-height: 43px;
+			width: 43px;
+		}
+
+		#sidebar .offer .row .l7 {
+			padding-left: 1rem;
+		}
+
+	}
+
+	/* 7.3. REGULAR TABLETS
+	---------------------------------------------------------------*/
+	@media (max-width: 768px) {
+
+		.container {
+			width: 540px;
+		}
+
+		#tools .left {
+			display: none;
+		}
+
+		.icon-checkbox {
+			height: 39px;
+		}
+
+		.icon-checkbox input + label:before,
+		.icon-checkbox input:checked + label:before {
+			height: 39px;
+			line-height: 39px;
+			width: 39px;
+		}
+
+	}
+
+	/* 7.4. SMARTPHONES
+	---------------------------------------------------------------*/
+	@media (max-width: 600px) {
+
+		.container {
+			width: 90%;
+		}
+
+		#searchbox {
+			padding-top: 30px;
+		}
+
+		#searchbox .row .col {
+			width: 100%;
+		}
+
+		#fixed-height-slider {
+			height: 200px;
+		}
+
+		.caption {
+			right: 5%;
+			top: 17px;
+			width: 90%;
+		}
+
+		.review {
+			text-align: center;
+		}
+
+		#blog .post {
+			margin: 0 0 30px;
+		}
+
+		#blog .post .meta {
+			float: left;
+			width: 50%;
+		}
+
+			#blog .post .meta .day,
+			#blog .post .meta .month {
+				display: inline-block;
+				font-size: 1rem;
+				font-weight: normal;
+				line-height: 1rem;
+			}
+
+			#blog .post .meta i {
+				display: inline-block;
+			}
+
+		#blog #related-posts,
+		#comments {
+			margin-right: 0;
+		}
+
+		#map-container {
+			height: 300px !important;
+		}
+
+		#contact-agent input {
+			margin-top: 20px;
+		}
+
+		#sidebar {
+			border-top: 1px solid #e0e0e0;
+			margin-top: 3rem;
+			padding-top: 3rem;
+		}
+
+		footer .fa {
+			margin: 0 10px 0 0;
+		}
+
+	}

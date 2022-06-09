@@ -1,0 +1,340 @@
+@font-face {
+	font-family: 'fontic-hotel';
+	src:url('../font/fontic-hotels/fontic-hotel.eot');
+	src:url('../font/fontic-hotels/fontic-hotel.eot?#iefix') format('embedded-opentype'),
+		url('../font/fontic-hotels/fontic-hotel.woff') format('woff'),
+		url('../font/fontic-hotels/fontic-hotel.ttf') format('truetype'),
+		url('../font/fontic-hotels/fontic-hotel.svg#fontic-hotel') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'fontic-hotel';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-fontic-hotel-wireless, .icon-fontic-hotel-wine, .icon-fontic-hotel-water, .icon-fontic-hotel-washing-machine, .icon-fontic-hotel-valet, .icon-fontic-hotel-unisex, .icon-fontic-hotel-umbrella, .icon-fontic-hotel-tv, .icon-fontic-hotel-towel, .icon-fontic-hotel-toilet-paper, .icon-fontic-hotel-toilet, .icon-fontic-hotel-tennis, .icon-fontic-hotel-taxi, .icon-fontic-hotel-swimming-pool, .icon-fontic-hotel-stove, .icon-fontic-hotel-steps, .icon-fontic-hotel-snowflake, .icon-fontic-hotel-smoke, .icon-fontic-hotel-single-bed, .icon-fontic-hotel-shower, .icon-fontic-hotel-shop, .icon-fontic-hotel-service, .icon-fontic-hotel-satelite, .icon-fontic-hotel-safe, .icon-fontic-hotel-restaurant, .icon-fontic-hotel-refridgerator, .icon-fontic-hotel-recycle-bin, .icon-fontic-hotel-reception, .icon-fontic-hotel-pool, .icon-fontic-hotel-police, .icon-fontic-hotel-pin, .icon-fontic-hotel-photo, .icon-fontic-hotel-phone, .icon-fontic-hotel-pet, .icon-fontic-hotel-pc, .icon-fontic-hotel-parking, .icon-fontic-hotel-no-smoking, .icon-fontic-hotel-normal, .icon-fontic-hotel-no-pets, .icon-fontic-hotel-non-stop, .icon-fontic-hotel-music, .icon-fontic-hotel-meal, .icon-fontic-hotel-massage, .icon-fontic-hotel-male, .icon-fontic-hotel-maide, .icon-fontic-hotel-luggage, .icon-fontic-hotel-lamp, .icon-fontic-hotel-key, .icon-fontic-hotel-iron, .icon-fontic-hotel-info, .icon-fontic-hotel-ice-cream, .icon-fontic-hotel-hotel-2, .icon-fontic-hotel-hotel, .icon-fontic-hotel-hot-chocolate, .icon-fontic-hotel-hospital, .icon-fontic-hotel-gym, .icon-fontic-hotel-golf, .icon-fontic-hotel-gift, .icon-fontic-hotel-football, .icon-fontic-hotel-fishing, .icon-fontic-hotel-fire-extinguisher, .icon-fontic-hotel-female, .icon-fontic-hotel-escalator, .icon-fontic-hotel-elevator, .icon-fontic-hotel-eco, .icon-fontic-hotel-dvd, .icon-fontic-hotel-dryer, .icon-fontic-hotel-drink, .icon-fontic-hotel-double-bed, .icon-fontic-hotel-dock, .icon-fontic-hotel-dnd, .icon-fontic-hotel-disabled, .icon-fontic-hotel-controller, .icon-fontic-hotel-connect, .icon-fontic-hotel-closet, .icon-fontic-hotel-chicken, .icon-fontic-hotel-champaigne, .icon-fontic-hotel-casino, .icon-fontic-hotel-cash, .icon-fontic-hotel-card, .icon-fontic-hotel-car, .icon-fontic-hotel-bunk-bed, .icon-fontic-hotel-breakfast, .icon-fontic-hotel-bed-6, .icon-fontic-hotel-bed-5, .icon-fontic-hotel-bed-4, .icon-fontic-hotel-bed-3, .icon-fontic-hotel-bed-2, .icon-fontic-hotel-bed-1, .icon-fontic-hotel-bed, .icon-fontic-hotel-beach, .icon-fontic-hotel-bathtube, .icon-fontic-hotel-barber, .icon-fontic-hotel-airport, .icon-fontic-hotel-air-condition, .icon-fontic-hotel-5-stars, .icon-fontic-hotel-4-stars, .icon-fontic-hotel-3-stars, .icon-fontic-hotel-2-stars, .icon-fontic-hotel-1-star {
+	font-family: 'fontic-hotel';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-fontic-hotel-wireless:before {
+	content: "\e000";
+}
+.icon-fontic-hotel-wine:before {
+	content: "\e001";
+}
+.icon-fontic-hotel-water:before {
+	content: "\e002";
+}
+.icon-fontic-hotel-washing-machine:before {
+	content: "\e003";
+}
+.icon-fontic-hotel-valet:before {
+	content: "\e004";
+}
+.icon-fontic-hotel-unisex:before {
+	content: "\e005";
+}
+.icon-fontic-hotel-umbrella:before {
+	content: "\e006";
+}
+.icon-fontic-hotel-tv:before {
+	content: "\e007";
+}
+.icon-fontic-hotel-towel:before {
+	content: "\e008";
+}
+.icon-fontic-hotel-toilet-paper:before {
+	content: "\e009";
+}
+.icon-fontic-hotel-toilet:before {
+	content: "\e00a";
+}
+.icon-fontic-hotel-tennis:before {
+	content: "\e00b";
+}
+.icon-fontic-hotel-taxi:before {
+	content: "\e00c";
+}
+.icon-fontic-hotel-swimming-pool:before {
+	content: "\e00d";
+}
+.icon-fontic-hotel-stove:before {
+	content: "\e00e";
+}
+.icon-fontic-hotel-steps:before {
+	content: "\e00f";
+}
+.icon-fontic-hotel-snowflake:before {
+	content: "\e010";
+}
+.icon-fontic-hotel-smoke:before {
+	content: "\e011";
+}
+.icon-fontic-hotel-single-bed:before {
+	content: "\e012";
+}
+.icon-fontic-hotel-shower:before {
+	content: "\e013";
+}
+.icon-fontic-hotel-shop:before {
+	content: "\e014";
+}
+.icon-fontic-hotel-service:before {
+	content: "\e015";
+}
+.icon-fontic-hotel-satelite:before {
+	content: "\e016";
+}
+.icon-fontic-hotel-safe:before {
+	content: "\e017";
+}
+.icon-fontic-hotel-restaurant:before {
+	content: "\e018";
+}
+.icon-fontic-hotel-refridgerator:before {
+	content: "\e019";
+}
+.icon-fontic-hotel-recycle-bin:before {
+	content: "\e01a";
+}
+.icon-fontic-hotel-reception:before {
+	content: "\e01b";
+}
+.icon-fontic-hotel-pool:before {
+	content: "\e01c";
+}
+.icon-fontic-hotel-police:before {
+	content: "\e01d";
+}
+.icon-fontic-hotel-pin:before {
+	content: "\e01e";
+}
+.icon-fontic-hotel-photo:before {
+	content: "\e01f";
+}
+.icon-fontic-hotel-phone:before {
+	content: "\e020";
+}
+.icon-fontic-hotel-pet:before {
+	content: "\e021";
+}
+.icon-fontic-hotel-pc:before {
+	content: "\e022";
+}
+.icon-fontic-hotel-parking:before {
+	content: "\e023";
+}
+.icon-fontic-hotel-no-smoking:before {
+	content: "\e024";
+}
+.icon-fontic-hotel-normal:before {
+	content: "\e025";
+}
+.icon-fontic-hotel-no-pets:before {
+	content: "\e026";
+}
+.icon-fontic-hotel-non-stop:before {
+	content: "\e027";
+}
+.icon-fontic-hotel-music:before {
+	content: "\e028";
+}
+.icon-fontic-hotel-meal:before {
+	content: "\e029";
+}
+.icon-fontic-hotel-massage:before {
+	content: "\e02a";
+}
+.icon-fontic-hotel-male:before {
+	content: "\e02b";
+}
+.icon-fontic-hotel-maide:before {
+	content: "\e02c";
+}
+.icon-fontic-hotel-luggage:before {
+	content: "\e02d";
+}
+.icon-fontic-hotel-lamp:before {
+	content: "\e02e";
+}
+.icon-fontic-hotel-key:before {
+	content: "\e02f";
+}
+.icon-fontic-hotel-iron:before {
+	content: "\e030";
+}
+.icon-fontic-hotel-info:before {
+	content: "\e031";
+}
+.icon-fontic-hotel-ice-cream:before {
+	content: "\e032";
+}
+.icon-fontic-hotel-hotel-2:before {
+	content: "\e033";
+}
+.icon-fontic-hotel-hotel:before {
+	content: "\e034";
+}
+.icon-fontic-hotel-hot-chocolate:before {
+	content: "\e035";
+}
+.icon-fontic-hotel-hospital:before {
+	content: "\e036";
+}
+.icon-fontic-hotel-gym:before {
+	content: "\e037";
+}
+.icon-fontic-hotel-golf:before {
+	content: "\e038";
+}
+.icon-fontic-hotel-gift:before {
+	content: "\e039";
+}
+.icon-fontic-hotel-football:before {
+	content: "\e03a";
+}
+.icon-fontic-hotel-fishing:before {
+	content: "\e03b";
+}
+.icon-fontic-hotel-fire-extinguisher:before {
+	content: "\e03c";
+}
+.icon-fontic-hotel-female:before {
+	content: "\e03d";
+}
+.icon-fontic-hotel-escalator:before {
+	content: "\e03e";
+}
+.icon-fontic-hotel-elevator:before {
+	content: "\e03f";
+}
+.icon-fontic-hotel-eco:before {
+	content: "\e040";
+}
+.icon-fontic-hotel-dvd:before {
+	content: "\e041";
+}
+.icon-fontic-hotel-dryer:before {
+	content: "\e042";
+}
+.icon-fontic-hotel-drink:before {
+	content: "\e043";
+}
+.icon-fontic-hotel-double-bed:before {
+	content: "\e044";
+}
+.icon-fontic-hotel-dock:before {
+	content: "\e045";
+}
+.icon-fontic-hotel-dnd:before {
+	content: "\e046";
+}
+.icon-fontic-hotel-disabled:before {
+	content: "\e047";
+}
+.icon-fontic-hotel-controller:before {
+	content: "\e048";
+}
+.icon-fontic-hotel-connect:before {
+	content: "\e049";
+}
+.icon-fontic-hotel-closet:before {
+	content: "\e04a";
+}
+.icon-fontic-hotel-chicken:before {
+	content: "\e04b";
+}
+.icon-fontic-hotel-champaigne:before {
+	content: "\e04c";
+}
+.icon-fontic-hotel-casino:before {
+	content: "\e04d";
+}
+.icon-fontic-hotel-cash:before {
+	content: "\e04e";
+}
+.icon-fontic-hotel-card:before {
+	content: "\e04f";
+}
+.icon-fontic-hotel-car:before {
+	content: "\e050";
+}
+.icon-fontic-hotel-bunk-bed:before {
+	content: "\e051";
+}
+.icon-fontic-hotel-breakfast:before {
+	content: "\e052";
+}
+.icon-fontic-hotel-bed-6:before {
+	content: "\e053";
+}
+.icon-fontic-hotel-bed-5:before {
+	content: "\e054";
+}
+.icon-fontic-hotel-bed-4:before {
+	content: "\e055";
+}
+.icon-fontic-hotel-bed-3:before {
+	content: "\e056";
+}
+.icon-fontic-hotel-bed-2:before {
+	content: "\e057";
+}
+.icon-fontic-hotel-bed-1:before {
+	content: "\e058";
+}
+.icon-fontic-hotel-bed:before {
+	content: "\e059";
+}
+.icon-fontic-hotel-beach:before {
+	content: "\e05a";
+}
+.icon-fontic-hotel-bathtube:before {
+	content: "\e05b";
+}
+.icon-fontic-hotel-barber:before {
+	content: "\e05c";
+}
+.icon-fontic-hotel-airport:before {
+	content: "\e05d";
+}
+.icon-fontic-hotel-air-condition:before {
+	content: "\e05e";
+}
+.icon-fontic-hotel-5-stars:before {
+	content: "\e05f";
+}
+.icon-fontic-hotel-4-stars:before {
+	content: "\e060";
+}
+.icon-fontic-hotel-3-stars:before {
+	content: "\e061";
+}
+.icon-fontic-hotel-2-stars:before {
+	content: "\e062";
+}
+.icon-fontic-hotel-1-star:before {
+	content: "\e063";
+}
